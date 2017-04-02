@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/swiper-3.4.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="CSS/css-stars.css"/>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/swiper-3.4.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="JS/jquery.barrating.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				var html=document.documentElement;
+				var hWidth=html.getBoundingClientRect().width;
+				html.style.fontSize=hWidth/20+"px";
+			})()
+		</script>
+	</head>
+	<body>
+		<section class="page pageShow" id="welcome">
+			<div class="tree">
+				<img src="IMG/tree.jpg"/>
+				<div class="welcome2">
+					<img src="IMG/title.png"/>
+					<span class="shake"></span>
+				</div>
+				<img src="IMG/title2.png"/ class="tree3">
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+				
+			</div>
+			<h1 id="logo">
+				<img src="IMG/logo.png"/>
+			</h1>
+		</section>
+		<section class="page" id="final">
+			<div class="tree">
+				<img src="IMG/tree.jpg"/>
+				<div class="welcome2">
+					<img src="IMG/tranks2.png"/>
+				</div>
+				<!--<img src="IMG/title2.png"/>-->
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+			</div>
+			<input type="button" class="tag_btn" value="感谢支持" id="final_btn"/>
+		</section>
+		<!--<section class="page"></section>-->
+		<section class="page" id="news">
+			<img src="IMG/news.png"/>
+			<p>请上传旅游投诉以及突发事件</p>
+			<section class="file">
+				<label>
+					<input type="file" />
+					<span>导入视频</span>
+				</label>
+				<label>
+					<input type="file" />
+					<span>上传照片</span>
+				</label>
+				
+			</section>
+			<input type="button" class="tag_btn file_btn" value="点击提交" />
+		</section>
+		<section class="page" id="mask">
+			
+		</section>
+		<section class="page pageShow" id="index">
+			
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="IMG/1.jpg"/></div>
+				        <div class="swiper-slide"><img src="IMG/2.jpg"/></div>
+				        <div class="swiper-slide"><img src="IMG/3.jpg"/></div>
+				        <div class="swiper-slide"><img src="IMG/4.jpg"/></div>
+				        <div class="swiper-slide"><img src="IMG/5.jpg"/></div>
+				        
+				    </div>
+				    <p>北京邻家便利店</p>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+					
+				</div>
+				<h2 class="pingfen_h2 pingfen_text">给我们评分</h2>
+				<div id="pingfen_box">
+					<span class="pingfen_text">综合印象</span>
+					<select class="raty zonghe">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					</select>
+				</div>
+				<div id="pingfen_box">
+					<span class="pingfen_text">服务指数</span>
+					<select class="raty fuwu">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					</select>
+				</div>
+				<div id="pingfen_box">
+					<span class="pingfen_text">消费指数</span>
+					<select class="raty xiaofei">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					</select>
+				</div>
+				<section class="tags">
+					<h2 class="pingfen_text" style="margin-top:0.1875rem ;border-top: 1px solid #e5e5e5;padding-top: 0.1rem;">给我们添加标签</h2>
+					<div class="little_tags">
+						<span>服务好</span>
+						<span>小妹漂亮</span>
+						<span>帅哥多</span>
+						<span>商品贵</span>
+						<span>太难吃了</span>
+						<span>味道一般</span>
+						<span>口味好</span>
+						<span>装修暖</span>
+						<span>人好多</span>
+						<span>我是路人甲</span>
+						<p class="info">请您务必给我们一个评价</p>
+					</div>
+				</section>
+				<input type="button" class="tag_btn" value="提交" />
+			
+		</section>
+	</body>
+	<script type="text/javascript">
+		 $(function() {
+	      	$('.raty').barrating({
+	        	theme: 'css-stars'
+	     	 });
+	   	});
+		function view(){
+			return{
+				w:document.documentElement.clientWidth,
+				h:document.documentElement.clientHeight
+			};
+		}
+		document.body.style.height=view().h+"px";
+	</script>
+</html>
